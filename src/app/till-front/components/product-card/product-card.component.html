@@ -1,0 +1,11 @@
+<button (click)="addProductToBasket()" class="btn btn-default">
+    <div class="row">
+        <strong>{{product.name}}</strong>
+    </div>
+    <div class="row">
+        {{product.maker}}
+    </div>
+    <div class="row">
+        {{product.price | currency:'GBP':true:'1.2-2'}}
+    </div>
+</button>

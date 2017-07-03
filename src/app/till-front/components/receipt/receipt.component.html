@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="col-md-4">Product</th>
+          <th class="col-md-4 text-right">Quantity</th>
+          <th class="col-md-4 text-right">SubTotal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let receiptProduct of receipt?.receiptProducts" [receiptProduct]="receiptProduct"></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="row receipt-footer-row">
+  <app-receipt-footer [total]="receipt?.total"></app-receipt-footer>
+</div>

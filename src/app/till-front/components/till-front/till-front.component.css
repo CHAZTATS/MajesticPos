@@ -1,0 +1,11 @@
+app-receipt {
+    border-left: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+    height:100%;
+}
+
+app-main-section {
+    background-color: #65a602;
+    display: block;
+    height: 100%;
+}

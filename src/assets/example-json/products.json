@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "Sauvignon Blanc",
+        "maker": "Dave Lee",
+        "price": 12.99
+    },
+    {
+        "id": 2,
+        "name": "Pinot Grigio",
+        "maker": "Mark Mann",
+        "price": 8.99
+    },
+    {
+        "id": 3,
+        "name": "Lager",
+        "maker": "Mike Dewbery",
+        "price": 2.99
+    },
+    {
+        "id": 4,
+        "name": "Cider",
+        "maker": "James Lawrie",
+        "price": 4.99
+    },
+    {
+        "id": 5,
+        "name": "Merlot",
+        "maker": "Charles Taverner",
+        "price": 16.99
+    },
+    {
+        "id": 6,
+        "name": "Rioja",
+        "maker": "Dan Florido",
+        "price": 10.99
+    },
+    {
+        "id": 7,
+        "name": "German Beer x12",
+        "maker": "Matt Reid",
+        "price": 23.99
+    },
+    {
+        "id": 8,
+        "name": "Dutch Water",
+        "maker": "Sven Rienstra",
+        "price": 1.99
+    },
+    {
+        "id": 9,
+        "name": "Picpoul",
+        "maker": "Matt Sladen",
+        "price": 21.99
+    },
+    {
+        "id": 10,
+        "name": "Broken Wine Bottle",
+        "maker": "Matthew Kempson",
+        "price": 0.99
+    },
+    {
+        "id": 11,
+        "name": "Port",
+        "maker": "Paul Bellwood",
+        "price": 12.99
+    },
+    {
+        "id": 12,
+        "name": "Gin",
+        "maker": "Chaz Brett",
+        "price": 24.99
+    },
+    {
+        "id": 13,
+        "name": "Chablis",
+        "maker": "Stuart Harrold",
+        "price": 17.99
+    },
+    {
+        "id": 14,
+        "name": "Coffee",
+        "maker": "Tom Watson",
+        "price": 9.99
+    },
+    {
+        "id": 15,
+        "name": "Champagne",
+        "maker": "Seb Hopley",
+        "price": 23.99
+    },
+    {
+        "id": 16,
+        "name": "Peroni",
+        "maker": "Jordan Woerner",
+        "price": 12.99
+    }
+]
