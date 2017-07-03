@@ -4,7 +4,7 @@
     <span class="input-group-btn">
       <button class="btn btn-info" type="button" (click)="decreaseQuantity()"> - </button>
     </span>
-    <input type="number" class="form-control text-center" [(ngModel)]="receiptProduct.quantity">
+    <input type="number" class="form-control text-center" [(ngModel)]="receiptProduct.quantity" (ngModelChange)="updateSubtotal()">
     <span class="input-group-btn">
       <button class="btn btn-info" type="button" (click)="increaseQuantity()"> + </button>
     </span>

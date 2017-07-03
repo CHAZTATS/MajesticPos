@@ -1,4 +1,2 @@
 <app-navbar></app-navbar>
-<section>
-  <app-product-card (addToBasket)="productAddedToBasket($event)" [product]="product" *ngFor="let product of products" class="col-md-3"></app-product-card>
-</section>
+<app-product-card (addToBasket)="productAddedToBasket($event)" [product]="product" *ngFor="let product of products" class="col-md-3"></app-product-card>
