@@ -19,7 +19,7 @@ export class ReceiptComponent implements OnInit {
   ngDoCheck() {
     this.receipt.total = 0;
     this.receipt.receiptProducts.forEach(rp => {
-      this.receipt.total += rp.quantity * rp.subtotal;
+      this.receipt.total += rp.subtotal;
     })
   }
 
