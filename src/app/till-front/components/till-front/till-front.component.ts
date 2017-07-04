@@ -3,6 +3,7 @@ import { ReceiptProduct } from './../../models/receipt-product';
 import { Receipt } from './../../models/receipt';
 import { Component, OnInit } from '@angular/core';
 import { Product } from "app/till-front/models/product";
+import {AngularIndexedDB} from 'angular2-indexeddb';
 
 @Component({
   selector: 'app-till-front',
@@ -23,6 +24,28 @@ export class TillFrontComponent implements OnInit {
     this.customer.name = "Charles Taverner"
     this.receipt.customer = this.customer;
     console.log(this.receipt);
+
+    let db = new AngularIndexedDB('myDb', 1);
+
+    db.createStore(1, (evt) => {
+    let objectStore = evt.currentTarget.result.createObjectStore(
+        'products', { keyPath: "id", autoIncrement: true });
+
+        objectStore.createIndex("id", "id", { unique: false });
+        objectStore.createIndex("name", "name", { unique: false });
+        objectStore.createIndex("maker", "maker", { unique: false });
+    }).then(() => {
+      db.add('products', { id: '1', name: 'name1', maker: 'maker1', price: 12.99 }).then(() => {
+          console.log("test");
+      }, (error) => {
+          console.log(error);
+      });
+      db.add('products', { id: '2', name: 'name2', maker: 'maker2', price: 10.00 }).then(() => {
+          console.log("test");
+      }, (error) => {
+          console.log(error);
+      });
+    });
   }
 
   addProductToReceipt($product: Product) {

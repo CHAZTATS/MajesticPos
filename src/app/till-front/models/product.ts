@@ -3,4 +3,5 @@ export interface Product {
     name?: string;
     maker?: string;
     price?: number;
+    barcode?: number;
 }
