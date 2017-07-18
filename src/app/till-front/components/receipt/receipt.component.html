@@ -3,17 +3,21 @@
     <table class="table">
       <thead>
         <tr>
-          <th class="col-md-4">Product</th>
-          <th class="col-md-4 text-right">Quantity</th>
-          <th class="col-md-4 text-right">SubTotal</th>
+          <th class="col-md-3">Product</th>
+          <th class="col-md-1"></th>
+          <th class="col-md-3 text-center">Quantity</th>
+          <th class="col-md-2"></th>
+          <th class="col-md-3 text-right">SubTotal</th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let receiptProduct of receipt?.receiptProducts" [receiptProduct]="receiptProduct"></tr>
+        <tr *ngFor="let receiptProduct of receipt?.receiptProducts" [receiptProduct]="receiptProduct" (removeFromReceipt)="onRemoveProductFromReceipt($event)"></tr>
       </tbody>
     </table>
   </div>
 </div>
-<div class="row receipt-footer-row">
-  <app-receipt-footer [total]="receipt?.total"></app-receipt-footer>
+<div class="receipt-footer-row row">
+  <div class="col-md-12">
+    <app-receipt-footer [total]="receipt?.total"></app-receipt-footer>
+  </div>
 </div>

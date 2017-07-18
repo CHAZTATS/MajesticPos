@@ -1,4 +1,4 @@
-import { ProductsService } from './till-front/services/products.service';
+import { ProductsService } from './till-front/services/products-service/products.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -12,6 +12,7 @@ import { MainSectionComponent } from './till-front/components/main-section/main-
 import { ProductCardComponent } from './till-front/components/product-card/product-card.component';
 import { ReceiptProductComponent } from './till-front/components/receipt-product/receipt-product.component';
 import { ReceiptFooterComponent } from './till-front/components/receipt-footer/receipt-footer.component';
+import { BarcodeBarComponent } from './till-front/components/barcode-bar/barcode-bar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ReceiptFooterComponent } from './till-front/components/receipt-footer/r
     MainSectionComponent,
     ProductCardComponent,
     ReceiptProductComponent,
-    ReceiptFooterComponent
+    ReceiptFooterComponent,
+    BarcodeBarComponent
   ],
   imports: [
     BrowserModule,

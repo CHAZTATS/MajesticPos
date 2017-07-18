@@ -41,7 +41,12 @@ export class TillFrontComponent implements OnInit {
           console.log(error);
       });
       db.add('products', { id: '2', name: 'name2', maker: 'maker2', price: 10.00 }).then(() => {
-          console.log("test");
+          db.getByIndex('products', 'name', 'name1').then(product => {
+            console.log(product);
+          });
+          db.getAll('products').then(products => {
+            console.log(products);
+          })
       }, (error) => {
           console.log(error);
       });

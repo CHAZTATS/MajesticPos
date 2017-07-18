@@ -1,3 +1,4 @@
+import { ReceiptProduct } from './../../models/receipt-product';
 import { Receipt } from './../../models/receipt';
 import { Component, OnInit, Input } from '@angular/core';
 
@@ -21,6 +22,10 @@ export class ReceiptComponent implements OnInit {
     this.receipt.receiptProducts.forEach(rp => {
       this.receipt.total += rp.subtotal;
     })
+  }
+
+  onRemoveProductFromReceipt(rp: ReceiptProduct){
+    this.receipt.receiptProducts = this.receipt.receiptProducts.filter(rpx => rpx !== rp);
   }
 
 }
