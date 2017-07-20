@@ -1,6 +1,6 @@
-<td>{{receiptProduct.product.name}}</td>
-<td><i class="fa fa-info"></i></td>
-<td>
+<td class="col-md-3">{{receiptProduct.product.name}}</td>
+<td class="col-md-1"><i class="fa fa-info"></i></td>
+<td class="col-md-3">
   <div id="quantityChanger" class="input-group">
     <span class="input-group-btn">
       <button class="btn btn-info" type="button" (click)="decreaseQuantity()"> - </button>
@@ -11,8 +11,8 @@
     </span>
   </div>
 </td>
-<td>
+<td class="col-md-2">
   <i class="fa fa-times" (click)="removeProductFromReceipt()"></i>
   <i class="fa fa-tag" (click)="openDiscountModal()"></i>
 </td>
-<td class="text-right">{{receiptProduct.subtotal | currency:'GBP':true:'1.2-2'}}</td>
+<td class="text-right col-md-3">{{receiptProduct.subtotal | currency:'GBP':true:'1.2-2'}}</td>

@@ -1,20 +1,18 @@
-<div class="row receipt-products">
-  <div class="table-responsive">
-    <table class="table">
-      <thead>
-        <tr>
-          <th class="col-md-3">Product</th>
-          <th class="col-md-1"></th>
-          <th class="col-md-3 text-center">Quantity</th>
-          <th class="col-md-2"></th>
-          <th class="col-md-3 text-right">SubTotal</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let receiptProduct of receipt?.receiptProducts" [receiptProduct]="receiptProduct" (removeFromReceipt)="onRemoveProductFromReceipt($event)"></tr>
-      </tbody>
-    </table>
-  </div>
+<div class="row receipt-products-row">
+  <table class="table table-fixed">
+    <thead>
+      <tr>
+        <th class="col-md-3">Product</th>
+        <th class="col-md-1"></th>
+        <th class="col-md-3 text-center">Quantity</th>
+        <th class="col-md-2"></th>
+        <th class="col-md-3 text-right">SubTotal</th>
+      </tr>
+    </thead>
+    <tbody class="receipt-products">
+      <tr *ngFor="let receiptProduct of receipt?.receiptProducts" [receiptProduct]="receiptProduct" (removeFromReceipt)="onRemoveProductFromReceipt($event)"></tr>
+    </tbody>
+  </table>
 </div>
 <div class="receipt-footer-row row">
   <div class="col-md-12 receipt-footer-column">
