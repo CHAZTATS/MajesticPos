@@ -1,6 +1,17 @@
 .receipt-footer-row {
-    bottom: 10px;
+    bottom: 0;
     position: absolute;
     font-size: 24px;
     width: 100%;
+    height: 100px;
+}
+
+.receipt-footer-column {
+    bottom: 10px;
+    position: absolute;
+}
+
+.receipt-products {
+    overflow: scroll;
+    height: calc(100vh - 100px);
 }
